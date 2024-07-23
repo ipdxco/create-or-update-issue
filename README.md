@@ -1,4 +1,4 @@
-# Create Or Update Issue on Failure
+# Create Or Update Issue
 
 This GitHub Action creates an issue or comments on an existing issue if a workflow run fails.
 
@@ -26,14 +26,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       # Add your build steps here
 
       - name: Create issue on failure
         if: failure()
-        uses: ./.github/actions/create-issue-on-failure
+        uses: ipdxco/create-or-update-issue
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           title: 'Build failed'
