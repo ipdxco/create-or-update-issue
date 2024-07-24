@@ -21,6 +21,8 @@ async function run() {
             repo,
             state: 'open',
             labels: label,
+            orderBy: 'created',
+            direction: 'desc',
         });
 
         const issueNumber = issues.length > 0 ? issues[0].number : null;
