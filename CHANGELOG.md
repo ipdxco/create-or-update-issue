@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.1] - 2024-07-24
+### Updated
+- explicitly order the result by descending creation date
+
 ## [1.0.0] - 2024-07-23
 ### Added
 - created action

@@ -1,6 +1,8 @@
 # Create Or Update Issue
 
-This GitHub Action creates an issue or comments on an existing issue if a workflow run fails.
+This GitHub Action creates an issue or comments on an existing issue if a
+workflow run fails. It picks the latest created issue with the given label
+to comment.
 
 ## Inputs
 
